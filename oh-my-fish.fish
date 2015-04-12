@@ -31,5 +31,11 @@ end
 # Prepend extracted user functions so they have the highest priority.
 set fish_function_path $user_function_path $fish_function_path
 
+# Set PATH
+set -gx PATH $PATH /home/pvekris/.root/bin
+set -gx PATH $PATH /home/pvekris/.dynamic-colors/bin
+set -gx PATH $PATH /home/pvekris/.cabal/bin
+set -gx PATH $PATH /home/pvekris/.xmonad/bin
+
 # Make sure to exit with $status of 1 when reloading the framework.
 or true
