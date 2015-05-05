@@ -32,10 +32,10 @@ end
 set fish_function_path $user_function_path $fish_function_path
 
 # Set PATH
-set -gx PATH $PATH /home/pvekris/.root/bin
-set -gx PATH $PATH /home/pvekris/.dynamic-colors/bin
-set -gx PATH $PATH /home/pvekris/.cabal/bin
-set -gx PATH $PATH /home/pvekris/.xmonad/bin
+set -gx PATH /home/pvekris/.root/bin $PATH
+set -gx PATH /home/pvekris/.dynamic-colors/bin $PATH
+set -gx PATH /home/pvekris/.cabal/bin $PATH
+set -gx PATH /home/pvekris/.xmonad/bin $PATH
 
 # Make sure to exit with $status of 1 when reloading the framework.
 or true
